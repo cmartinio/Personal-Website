@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homelab Description</title>
+</head>
+<body>
+    <h1>Homelab Description</h1>
+    <p>
+        My homelab is equipped with a powerful setup to support my virtualization needs. <br> It features a 64-core AMD EPYC CPU and 256GB of RAM, providing ample computing<br> power for running multiple virtual machines simultaneously.
+    </p>
+    <p>
+        For storage, I have integrated 2 HBAs (Host Bus Adapters) that are utilized for disks <br>passthrough to the virtualized TrueNAS. This allows me to efficiently manage and store<br> my data across various virtual machines.
+    </p>
+    <p>
+        Additionally, I have incorporated 2 Mellanox NICs (Network Interface Cards) into my homelab setup.<br> One of the NICs, a 40GB card, is directly connected to the TrueNAS for high-speed data transfers.<br> The other NIC, a Mellanox ConnectX-4, is connected to the ESXi 8 hypervisor, enabling fast and<br> reliable network connectivity for virtual machines.
+    </p>
+    <h2>Additional Homelab Section and components description</h2>
+    <ul>
+        <li>Operating Systems: VMWare ESXi</li>
+        <li>Motherboard: Supermicro 11HSSL-1</li>
+        <li>CPU: 64 cores AMD EPYC</li>
+        <li>RAM: 256GB ECC</li>
+        <li>2 HBAs for disks passthrough to the virtualized TrueNAS VM</li>
+        <li>1x 40 gigs Mellanox ConnectX-3  for high-speed data transfers from TrueNAS</li>
+        <li>1x 25 gigs Mellanox ConnectX-4 for ESXi 8 hypervisor networking</li>
+        <li>GPU: 2x 24GB NVIDIA Tesla P40 mainly used for AI model training and learning</li>
+        <li>Storage: 2x 2TB NVMe SSDs for ESXi 8 hypervisor</li>
+        <li>NAS Storage: 6x 18TB EXOS Enterprise disks for TrueNAS VM</li>
+    </ul>
+    <h2>Networking</h2>
+    <p>
+        The homelab is connected to a Mikrotik CRS326-4C+20G+2Q+RM switch.<br> This provides high-speed network connectivity between the virtual machines and the TrueNAS storage.<br> This setup ensures that data transfers are fast and efficient, enabling me to work on various projects simultaneously.
+    </p>
+    <ul>
+        <li>Switch: Mikrotik CRS326-4C+20G+2Q+RM.</li>
+        <li>Router: This Information is: NODIS.</li>
+        <li>Access Point: This Information is: NODIS.</li>
+    </ul>
+    <h2>Storage</h2>
+    <p>
+        The homelab features a TrueNAS VM that is used for storage and data management.<br> The TrueNAS VM is configured with 6x 18TB EXOS Enterprise disks, providing ample storage capacity for my data.<br> This setup allows me to efficiently manage and store my data across various virtual machines.
+    </p>
+    <li>Disks: 6x 18TB EXOS Enterprise disks.</li>
+    <li>RAID: ZFS RAIDZ2.</li>
+    <li>Capacity: 72TB usable storage.</li>
+    <li>Backup: 2x 18TB EXOS Enterprise disks for backup.</li>
+    <li>1TB cache for frequently accessed files</li>
+    
+    <h2>Virtual Machines</h2>
+    <p>
+        The homelab runs multiple virtual machines to support various projects and experiments.<br> These virtual machines are used for testing, development, and learning purposes.<br> Some of the virtual machines include:
+    </p>
+    <ul>
+        <li>Windows Server 2022 : For Active directory</li>
+        <li>Windows Server 2022: Sharepoint on premise</li>
+        <li>6 nodes Kubernetes cluster that runs my Worpress Blog</li>
+        <li>Ubuntu Server for Worpress</li>
+        <li>RedHat Enterprise Linux for wordpress Testing</li>
+        <li>RedHar Enterprise Linux for Ansible Tower and Centralized Automation Management</li>
+        <li>Ubuntu Server has a Docker Host</li>
+        <li>Kali Linux for penetration testing</li>
+        <li>pfSense</li>
+        <li>Security Onion</li>
+        <li><strong>ELK Stack: </strong>for a total and complete monitoring solution: <li>
+            <strong>ELK Stack definition:</strong> The ELK Stack is a set of open-source tools commonly used for<br> log management and data analytics.
+            <ul>
+                <li><strong>Elasticsearch:</strong> Elasticsearch is a distributed search and analytics engine. It's designed<br> to store, search, and analyze large volumes of data quickly and in near real-time.</li>
+                <li><strong>Logstash:</strong> Logstash is a data processing pipeline that ingests, transforms, and enriches<br> data from various sources before sending it to a storage or indexing backend, such as Elasticsearch.</li>
+                <li><strong>Kibana:</strong> Kibana is a data visualization and exploration tool that works seamlessly with<br> Elasticsearch. It allows users to visualize data stored in Elasticsearch through interactive dashboards, charts, and graphs.</li>
+            </ul>
+        </li>
+    
+</li>
+        <li>TensorFlow for the above metioned 2 Tesla P40 GPUs </li>
+        <li>Apache Kafka</li>
+        <li>GitLab</li>
+</li>
+    </ul>
+    <h2>Conclusion</h2>
+    <p>
+        My homelab is an essential part of my learning and experimentation process.<br> It provides me with the necessary resources to test new technologies, develop new skills, and work on various projects.<br> The powerful setup, high-speed network connectivity, and ample storage capacity enable me to run multiple virtual machines simultaneously and efficiently manage my data.<br> This homelab setup has been instrumental in my professional growth and development, allowing me to stay up-to-date with the latest technologies and trends in the industry.
+    </p>
+
+    <h2>Homelab Diagram</h2>
+    <p>
+        coming soon.
+    </p>
+
+    <footer>
+        <h2> Contact me </h2>  
+        <i> Please reach out for any reason!</i>
+        <ul>
+<li>Email: <a href="mailto:contact@cmartin.io?subject=Website%20visit" type="skip">contact@cmartin.io</a></li>
+<li>Twitter: <a href="https://twitter.com/cmartin_io" type="skip">@cmartin_io</a></li>
+<li>LinkedIn: <a href="www.linkedin.com/in/christian-martin-ab02a444">linkedin.com/in/christian-martin-ab02a444</a></li>
+<li>GitHub: <a href="https://github.com/cmartinio">github.com/cmartinio</a></li>
+</ul>
+</footer>
+
+    <p>
+        -------------<br>
+        <a href="index.html">Main Page</a>
+    </p>     
+</body>
+</html>

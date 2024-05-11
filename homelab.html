@@ -3,10 +3,23 @@
 <head>
     <title>Homelab Description</title>
 </head>
+
+
 <body>
     <h1>Homelab Description</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |	
+        <a href="aboutme.html">About Me</a> |
+      <a href="Christian-Resume-10.pdf" target="_blank">Extended Resume</a> | 
+        <a href="homelab.html">Homelab</a> |
+        <a href="homelab-diagram.html">Homelab Diagram</a> |
+        <a href="blogpost.html">Blog</a> 
+      <!-- <a href="extendedResume.html">Extended Resume</a> | -->
+      </nav>
+      
     <p>
-        My homelab is an Hyperconververge Infrastructure that seamlessly integrate high performance computing, high speed Networking and secure Enterprise grade storage solution.  thi powerful setup to support my virtualization needs and more. <br> It features a 64-core AMD EPYC CPU and 256GB of RAM, providing ample computing<br> power for running multiple virtual machines simultaneously.
+        My homelab is an Hyperconververge Infrastructure that seamlessly integrate high performance computing, <br>high speed Networking and secure Enterprise grade storage solution.  thi powerful setup to support my virtualization needs and more. <br> It features a 64-core AMD EPYC CPU and 256GB of RAM, providing ample computing<br> power for running multiple virtual machines simultaneously.
     </p>
     <p>
         For storage, I have integrated 2 HBAs (Host Bus Adapters) that are utilized for disks <br>passthrough to the virtualized TrueNAS. This allows me to efficiently manage and store<br> my data across various virtual machines.
@@ -46,6 +59,26 @@
     <li>Capacity: 72TB usable storage.</li>
     <li>Backup: 2x 18TB EXOS Enterprise disks for backup.</li>
     <li>1TB cache for frequently accessed files</li>
+
+    <h2>VMWare Nested virtualization Lab</h2>
+    <p>
+   <h3>Nested ESXi virtualization and VMware NSX TLDR:</h3>
+The homelab is running VMWare ESXi 8 hypervisor, which supports nested virtualization.<br> 
+     
+Nested virtualization refers to the ability to run a hypervisor inside of a virtual machine. In the context of VMware, <br>this is known as nested ESXi. This is particularly useful for testing and development environments where you can emulate a complete virtual system,<br> including the hypervisor, within a single physical host. This allows you to experiment with different configurations, <br> simulate different scenarios, and learn about ESXi without needing multiple physical machines.
+
+<h3>Benefits of Nested ESXi:</h3>
+<ul>
+    <li>Cost-effective: You can set up multiple virtual ESXi hosts on a single physical machine, saving on hardware costs.</li>
+    <li>Flexibility: You can easily create, modify, or remove virtual ESXi hosts as needed.</li>
+    <li>Isolation: Changes made on a virtual ESXi host do not affect the physical host or other virtual hosts.</li>
+    <li>Learning and testing: It's a great environment for learning about ESXi and testing configurations before deploying them in a production environment.</li>
+
+<h3>Software-Defined Networking (SDN) in VMware AKA NSX TLDR:</h3>
+VMware's approach to SDN is primarily realized through VMware NSX. NSX virtualizes all networking layers (from L2 to L7) and<br> reproduces them entirely in software, decoupling the network functions from the underlying hardware. This allows for highly flexible and scalable<br> network deployment and management within a virtualized environment.
+
+In the context of a nested ESXi environment, <br> SDN allows for the creation of complex network topologies within the nested<br> infrastructure. The traffic between virtual machines, even those on separate virtual ESXi hosts, can be entirely contained within the physical host. <br> This is achieved by virtualizing the network components such as switches, routers, firewalls, etc., allowing for network<br> traffic to be routed and controlled entirely within the software, without ever leaving the physical host. This is beneficial for<br> testing and development, security, and isolation of network traffic.
+       
     
     <h2>Virtual Machines</h2>
     <p>
@@ -79,7 +112,12 @@
     </ul>
     <h2>Conclusion</h2>
     <p>
-        My homelab is an essential part of my learning and experimentation process.<br> It provides me with the necessary resources to test new technologies, develop new skills, and work on various projects.<br> The powerful setup, high-speed network connectivity, and ample storage capacity enable me to run multiple virtual machines simultaneously and efficiently manage my data.<br> This homelab setup has been instrumental in my professional growth and development, allowing me to stay up-to-date with the latest technologies and trends in the industry.
+        My homelab is an essential part of my learning and experimentation process.<br> It provides me with the necessary resources to test new technologies, develop new 
+        skills, and work on various projects.<br> I guess you are asking yourselves but where is the Cybersecurity and penetration testing LAB? <br> Well this is 
+        the penetration testing LAB, in the real world one works with real systems, not some purposely built<br> systems for testing. I built this environment with that idea 
+        in mind. Sonetimes I invite my friends in the industry<br> the to try and hack the system, this helps me improve the security posture of the overl system. The powerful 
+        setup,<br> high-speed network connectivity, and ample storage capacity enable me to run multiple virtual machines simultaneously<br> and efficiently manage my data. 
+        This homelab setup has been instrumental in my professional growth and development,<br> allowing me to stay up-to-date with the latest technologies and trends in the industry.
     </p>
 
     <h2>Homelab Diagram</h2>

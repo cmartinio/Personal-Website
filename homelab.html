@@ -1,28 +1,79 @@
+
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" lang="en">
 <head>
-    <title>Homelab Description</title>
+    <title>cmartin.io/homelabt</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Christian Martin  Webpage and Technical Resources">
+    <meta name="keywords" content="CISSP, CCNP, CYSA+, AWS, AZURE, Automation, Cloud, network, training, expert">
+    <meta name="author" content="Christian Martin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-
-
-<body>
-    <h1>Homelab Description</h1>
-
-    <nav>
-        <a href="index.html">Home</a> |	
-        <a href="aboutme.html">About Me</a> |
-      <a href="Christian-Resume-10.pdf" target="_blank">Extended Resume</a> | 
-        <a href="homelab.html">Homelab</a> |
-        <a href="homelab-diagram.html">Homelab Diagram</a> |
-        <a href="blogpost.html">Blog</a> 
-      <!-- <a href="extendedResume.html">Extended Resume</a> | -->
-      </nav>
-      
+<header>
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <div class="d-flex ">
+                <div>
+                    <h1><a href="index.html"><img class="logo" src="images/logo-no-background.png"></a></h1>
+                    <p class="lead"><em>This website provides references to my <span class="warning">publicly-available professional work.</span></em></p>
+                </div>
+                <div class="image-container">
+                    <img class="img-fluid w-60 bigger-logo" src="images/logo-no-background-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<body data-new-gr-c-s-check-loaded="14.1157.0" data-gr-ext-installed="">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class = "container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Christian-Resume-10.pdf" target="_blank">Extended Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homelab.html">Homelab</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="homelab-diagram.html">Homelab Diagram</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogpost.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
     <p>
-        My homelab is an Hyperconververge Infrastructure that seamlessly integrate high performance computing, <br>high speed Networking and secure Enterprise grade storage solution.  thi powerful setup to support my virtualization needs and more. <br> It features a 64-core AMD EPYC CPU and 256GB of RAM, providing ample computing<br> power for running multiple virtual machines simultaneously.
+        My homelab is an Hyperconververge Infrastructure that seamlessly integrate high performance computing, <br>high speed Networking and secure Enterprise grade storage solution.  thi powerful setup to support my <br> needs and more. It features a 64-core AMD EPYC CPU and 256GB of RAM, providing ample computing<br> power for running multiple virtual machines simultaneously.
     </p>
-    <p>
-        For storage, I have integrated 2 HBAs (Host Bus Adapters) that are utilized for disks <br>passthrough to the virtualized TrueNAS. This allows me to efficiently manage and store<br> my data across various virtual machines.
+    <!-- Rest of the content goes here -->
+    <!-- Make sure to close all tags properly -->
+
+
+
+
+<p>
+        For storage, I have integrated 2 HBAs (Host Bus Adapters) that are utilized for disks passthrough to the <br>virtualized TrueNAS. This allows me to efficiently manage and store my data across various virtual machines.
     </p>
     <p>
         Additionally, I have incorporated 2 Mellanox NICs (Network Interface Cards) into my homelab setup.<br> One of the NICs, a 40GB card, is directly connected to the TrueNAS for high-speed data transfers.<br> The other NIC, a Mellanox ConnectX-4, is connected to the ESXi 8 hypervisor, enabling fast and<br> reliable network connectivity for virtual machines.
@@ -63,7 +114,7 @@
     <h2>VMWare Nested virtualization Lab</h2>
     <p>
    <h3>Nested ESXi virtualization and VMware NSX TLDR:</h3>
-The homelab is running VMWare ESXi 8 hypervisor, which supports nested virtualization.<br> 
+The homelab is running VMware ESXi 8 hypervisor, which supports nested virtualization.<br> 
      
 Nested virtualization refers to the ability to run a hypervisor inside of a virtual machine. In the context of VMware, <br>this is known as nested ESXi. This is particularly useful for testing and development environments where you can emulate a complete virtual system,<br> including the hypervisor, within a single physical host. This allows you to experiment with different configurations, <br> simulate different scenarios, and learn about ESXi without needing multiple physical machines.
 
@@ -112,12 +163,19 @@ In the context of a nested ESXi environment, <br> SDN allows for the creation of
     </ul>
     <h2>Conclusion</h2>
     <p>
-        My homelab is an essential part of my learning and experimentation process.<br> It provides me with the necessary resources to test new technologies, develop new 
-        skills, and work on various projects.<br> I guess you are asking yourselves but where is the Cybersecurity and penetration testing LAB? <br> Well this is 
-        the penetration testing LAB, in the real world one works with real systems, not some purposely built<br> systems for testing. I built this environment with that idea 
-        in mind. Sonetimes I invite my friends in the industry<br> the to try and hack the system, this helps me improve the security posture of the overl system. The powerful 
-        setup,<br> high-speed network connectivity, and ample storage capacity enable me to run multiple virtual machines simultaneously<br> and efficiently manage my data. 
-        This homelab setup has been instrumental in my professional growth and development,<br> allowing me to stay up-to-date with the latest technologies and trends in the industry.
+    <p>My homelab serves as a cornerstone in my continual learning and experimentation journey. It furnishes me with the indispensable resources to <br>explore new technologies, cultivate fresh skills, and engage in diverse projects.</p>
+    <p>You might be wondering, where does the Cybersecurity and penetration testing LAB fit into all this? Well, let me clarify: this homelab is the <br>very essence of a penetration testing environment. In the realm of real-world scenarios, one operates within genuine systems, not merely<br> contrived ones tailored for testing purposes. With this ethos in mind, I meticulously crafted this environment. <br>On occasions, I extend invitations to peers within the industry, encouraging them to attempt infiltrations. This collaborative effort not only <br>serves as a learning exercise but also fortifies the security posture of the overarching system.</p>
+    <p>The robust infrastructure, coupled with high-speed network connectivity and ample storage capacity, empowers me to concurrently operate<br> multiple virtual machines and efficiently administer my data. This homelab configuration has been pivotal in fostering my professional evolution,<br> enabling me to remain abreast of the latest technological advancements <br>and industry trends.</p>
+
+    <h3>Penetration Testing Lab Components:</h3>
+    <ul>
+        <li>Burp Suite</li>
+        <li>Kali Linux</li>
+        <li>Metasploit</li>
+        <li>OpenSense</li>
+        <li>SolarWinds</li>
+    </ul>
+
     </p>
 
     <h2>Homelab Diagram</h2>
@@ -130,5 +188,6 @@ In the context of a nested ESXi environment, <br> SDN allows for the creation of
         -------------<br>
         <a href="index.html">Main Page</a>
     </p>
+</div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 /* General body styling */
 body {
     margin: 0 auto; /* Center the body content */
-    padding: 40px; /* Padding for visible margins */
+    padding: 65px; /* Padding for visible margins */
     background-color: #f8f9fa; /* Light background for contrast */
     color: #212529; /* Text color */
     max-width: 1200px; /* Constrain the overall width of the page */
